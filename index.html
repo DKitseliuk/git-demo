@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Happy birthday</title>
+  </head>
+  <body>
+    <main class="main">
+      <section class="hero section">
+        <div class="container hero-container">
+          <h1 class="section-title">Андрію, це ти?</h1>
+          <p class="section-subtitle">Вітаємо з Днем народження, легендо!</p>
+          <p class="section-text">
+            Бажаємо, щоб життя було як all inclusive — максимум задоволення при
+            мінімумі зусиль!
+          </p>
+          <p class="section-text">
+            Хай робота не нервує, будні не стомлюють, а вихідні не закінчуються
+            раніше понеділка.
+          </p>
+          <p class="section-text">
+            І головне — щоб кожен новий рік додавав тобі не зморшок, а крутих
+            історій!
+          </p>
+          <p class="section-text">Прийми від нас наступні привітання:</p>
+          <ul class="button-list">
+            <li class="button-item">
+              <button type="button" class="open-bnt" data-open-greeting-first>
+                Перше привітання
+              </button>
+            </li>
+            <li class="button-item">
+              <button type="button" class="open-bnt" data-open-greeting-second>
+                Друге привітання
+              </button>
+            </li>
+            <li class="button-item">
+              <button type="button" class="open-bnt" data-open-greeting-third>
+                Третє привітання
+              </button>
+            </li>
+            <li class="button-item">
+              <button type="button" class="open-bnt" data-open-greeting-bonus>
+                Бонусне привітання
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <div class="backdrop is-hidden" data-backdrop-greeting-first>
+      <div class="container modal-container">
+        <button type="button" class="close-bnt" data-close-greeting-first>
+          <svg class="close-btn-svg" width="24" height="24">
+            <use href="./images/icons.svg#close-icon"></use>
+          </svg>
+        </button>
+        <iframe
+          class="video"
+          src="https://www.youtube.com/embed/3j8CTDLa2Ko"
+          title="KOLABA &amp; ПАВЛО ЗІБРОВ - День Народження (Official Music Video)"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <div class="backdrop is-hidden" data-backdrop-greeting-second>
+      <div class="container modal-container">
+        <button type="button" class="close-bnt" data-close-greeting-second>
+          <svg class="close-btn-svg" width="24" height="24">
+            <use href="./images/icons.svg#close-icon"></use>
+          </svg>
+        </button>
+        <iframe
+          class="video"
+          src="https://www.youtube.com/embed/ZEHRnZShXbQ"
+          title="Юний орел"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <div class="backdrop is-hidden" data-backdrop-greeting-third>
+      <div class="container modal-container">
+        <button type="button" class="close-bnt" data-close-greeting-third>
+          <svg class="close-btn-svg" width="24" height="24">
+            <use href="./images/icons.svg#close-icon"></use>
+          </svg>
+        </button>
+        <iframe
+          class="video-shorts"
+          src="https://www.youtube.com/embed/sSOhiEWiKvE"
+          title="бажаю вам щастя, здоровля #мем #україна"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <div class="backdrop is-hidden" data-backdrop-greeting-bonus>
+      <div class="container modal-container">
+        <button type="button" class="close-bnt" data-close-greeting-bonus>
+          <svg class="close-btn-svg" width="24" height="24">
+            <use href="./images/icons.svg#close-icon"></use>
+          </svg>
+        </button>
+        <p class="backdrop-text">Ось такого святкування тобі</p>
+        <img class="backdrop-img" src="./images/bonus.gif" alt="bonus" />
+      </div>
+    </div>
+    <script type="module" src="./script.js" defer></script>
+  </body>
+</html>
